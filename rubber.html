@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Rubber</title>
+		<meta charset="utf-8">
+		<style>
+		.block1 {
+			display: inline-block;
+			width:640px;
+			height: 480px;
+			background-color: #295f48;
+			
+		}
+		.block2 {
+			display: inline-block;
+			width: 320px;
+			height: 480px;
+			background-color: #419873;
+			
+		}
+		.block3 {
+			display: inline-block;
+			width: 320px;
+			height: 480px;
+			background-color: #52bf90;
+			
+		}
+		
+		@media screen and (min-width:640px) {
+			.wrapper {
+				width: 640px;
+				margin: 0 auto;
+			}
+			.block3{
+				margin-left: -4px;
+			}
+		}
+		@media screen and (max-width:640px) {
+			.block1 {
+				width: 320px;
+			}
+			.wrapper {
+				width: 320px;
+				margin: 0 auto;
+			}
+		}
+		</style>
+	</head>
+	<body>
+	<div class="wrapper">
+	<div class="block1"></div>
+	<div class="block2"></div>
+	<div class="block3"></div>
+	</div>
+	</body>
+</html>
